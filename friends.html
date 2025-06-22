@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Friends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body, html {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #e3f2fd; 
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #2196F3; 
+      flex-wrap: wrap;
+    }
+
+    .topnav a {
+      color: #e0f7fa;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      background-color: #64b5f6;
+      color: #003366;
+    }
+
+    .topnav a.active {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    h1 {
+      color: #0d47a1;
+      text-align: center;
+      font-family: 'Times New Roman', serif;
+      margin-top: 20px;
+    }
+
+    .animated-text {
+      text-align: center;
+      font-size: 24px;
+      color: #0d47a1;
+      font-family: 'Times New Roman', serif;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      animation: slide 8s linear infinite;
+      margin-bottom: 40px;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(-100%); }
+      50%  { transform: translateX(10%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #0d47a1;
+      font-family: 'Times New Roman', serif;
+      margin-top: 50px;
+    }
+
+    .float-img {
+      float: right;
+      margin: 10px 20px 20px 20px;
+      border: 2px solid #0d47a1;
+      padding: 3px;
+      border-radius: 10px;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .float-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 40px;
+      text-align: justify;
+      color: #002244;
+    }
+
+    .footer {
+      background-color: #0d47a1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 50px;
+      border-top: 4px solid #2196F3;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer p {
+      color: white;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .float-img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: 90%;
+      }
+
+      p {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="family.html">Family</a>
+    <a href="edu.html">Education</a>
+    <a class="active" href="friends.html">Friends</a>
+    <a href="foodplace.html">Fav Food and Place</a>
+    <a href="galeri.html">Gallery</a>
+  </div>
+
+  <h1><i>A Friendship Makes My Heart Happy</i></h1>
+  <div class="animated-text"><i>NazRieAkAi</i></div>
+
+  <img src="images/kawan.jpg" alt="Group Memories" title="Group Memories" class="float-img" />
+  <img src="images/kawan2.jpg" alt="Selfie after studying" title="Selfie after studying" class="float-img" />
+
+  <p>
+    These are my best friends in UiTM Machang, Kelantan Nazliana, Riena, Akmal, and Aiman. We became close since Semester 1 in 2023 because we were always grouped together for every assignment and project. Our friendship naturally grew stronger as we spent time studying, laughing, and supporting one another throughout our journey at the university.
+  </p>
+
+  <p>
+    We always work together on our tasks, hang out for meals after class, and enjoy each other's company even outside academic life. One of our favourite bonding spots is Sushi King, where we often treat ourselves after stressful deadlines. Whether it's going out for group discussions or just relaxing at the café nearby, they’ve made my university life meaningful and unforgettable.
+  </p>
+
+  <h2 class="section-title"><i>From School to Now</i></h2>
+
+  <img src="images/kawan3.jpg" alt="Since 2017" title="Since 2017" class="float-img"/> 
+  <img src="images/kawan4.jpg" alt="Besties Forever" title="Besties Forever" class="float-img"/>
+
+  <p>
+    I’ve also been blessed with a wonderful friendship that started back in 2017 at Sekolah Menengah Kebangsaan Pangkal Kalong. I met amazing friends who have stayed in my life until today. Some of them, like Aiman and Riena, continued with me to UiTM Machang, while others have entered the working world. Despite taking different paths, our connection remains strong.
+  </p>
+
+  <p>
+    We’ve grown up together, and even though life gets busy, we still find time to catch up, share memories, and support each other through everything. I’m truly grateful for these friendships whether old or new, near or far because they remind me that real bonds never fade, and real friends stay no matter the distance.
+  </p>
+
+  <div class="footer">
+    <p>This website is developed for IMD318 Individual Assignment</p>
+  </div>
+
+</body>
+</html>

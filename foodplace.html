@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favourite Food and Place</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body, html {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #005f99;
+      flex-wrap: wrap;
+    }
+
+    .topnav a {
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      background-color: #3399cc;
+      color: white;
+    }
+
+    .topnav a.active {
+      background-color: #003f66;
+      color: white;
+    }
+
+    h1 {
+      color: #003366;
+      text-align: center;
+      font-family: 'Times New Roman', serif;
+      margin-top: 20px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-row img {
+      width: 350px;
+      height: 300px;
+      object-fit: cover;
+      border: 2px solid #003366;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-row img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+      text-align: justify;
+      color: #002244;
+    }
+
+    h2 {
+      text-align: center;
+      color: #005f99;
+      margin-top: 50px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .column {
+      flex: 1 1 280px;
+      text-align: center;
+    }
+
+    .column img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border: 2px solid #87CEFA;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .column img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .column a {
+      display: block;
+      margin-top: 10px;
+      color: #003366;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .column a:hover {
+      color: #3399cc;
+    }
+
+    .footer {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-size: 14px;
+      text-align: center;
+      border-top: 4px solid #005f99;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer p {
+      color: white;
+      margin: 0;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .image-row img, .column img {
+        width: 100%;
+        height: auto;
+      }
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="family.html">Family</a>
+    <a href="edu.html">Education</a>
+    <a href="friends.html">Friends</a>
+    <a class="active" href="foodplace.html">Fav Food and Place</a>
+    <a href="galeri.html">Gallery</a>
+  </div>
+
+  <h1><i>My Favourite Food, Drinks & Dream Places</i></h1>
+
+  <div class="image-row">
+    <img src="images/tomyam.jpg" alt="Tomyam Thai" title="My Favourite: Tomyam">
+    <img src="images/latte.jpg" alt="Coffee" title="Coffee keeps me awake">
+    <img src="images/newyork.jpg" alt="New York" title="Dreaming of NYC">
+    <img src="images/korea.jpeg" alt="Korea" title="Memories in Korea">
+    <img src="images/bangkok.jpg" alt="Bangkok" title="Memories in Bangkok">
+  </div>
+
+  <p>
+    I absolutely love tomyam, especially the Thai version! Whenever I go out with my family or friends, we always search for Thai restaurants, whether it’s locally or during our travels. My family and I even make trips to Thailand especially Bangkok and Hatyai just to enjoy their authentic local food. The spicy, sour taste of tomyam is unbeatable and always reminds me of our food adventures together.
+  </p>
+
+  <p>
+    My favourite drink is definitely coffee. Whether it's iced or hot, I enjoy sipping coffee while doing assignments late at night or staying awake during long-distance drives. It's my go-to beverage that helps me stay focused and energized. There’s something comforting about the aroma of coffee that keeps me calm and productive, especially during hectic university weeks.
+  </p>
+
+  <p>
+    When it comes to dream destinations, New York City is at the top of my list. I’ve always been fascinated by its stunning skyscrapers, bustling city life, and the magical nighttime skyline. I don’t exactly know why, but something about tall buildings and bright lights excites me it feels like the heart of ambition and creativity. I dream of standing in Times Square one day, surrounded by the energy of the city that never sleeps.
+  </p>
+
+  <p>
+    Apart from New York, another country that has captured my heart is South Korea. I visited in 2017 and it left a lasting impression on me. The cool breeze, beautiful weather, and peaceful atmosphere made me fall in love instantly. I enjoy watching K-dramas, which deepened my love for Korean culture. From the food to the friendly people, Korea has always felt like a place I’d love to return to again someday.
+  </p>
+
+  <h2>Gallery: My Favourites</h2>
+
+  <div class="row">
+    <div class="column">
+      <img src="images/snowtown.jpg" alt="Favourite Cafe">
+      <a href="#cafe">My Favourite Cafe</a>
+    </div>
+    <div class="column">
+      <img src="images/steak.jpg" alt="Favourite Steak">
+      <a href="#steak">The Steak</a>
+    </div>
+    <div class="column">
+      <img src="images/sukiya.jpg" alt="Favourite Buffet">
+      <a href="#sosedap">Sukiya</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>This website is developed for IMD318 Individual Assignment</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Education</title>
+  <style>
+    body, html {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      text-align: center;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #1976d2;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #bbdefb;
+      color: #0d47a1;
+    }
+
+    .topnav a.active {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #0d47a1;
+    }
+
+    .caption-animate {
+      font-size: 28px;
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+      animation: slideIn 4s ease-in-out infinite alternate;
+      background: linear-gradient(90deg, #64b5f6, #1976d2, #64b5f6);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-30px); }
+      100% { transform: translateX(30px); }
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      line-height: 1.7;
+    }
+
+    dl dt {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #1565c0;
+    }
+
+    dl dd {
+      margin-bottom: 10px;
+    }
+
+    ol {
+      padding-left: 0;
+      list-style-position: inside;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      flex: 1 1 calc(33.333% - 20px);
+      background-color: #ffffff;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-bottom: 3px solid #64b5f6;
+    }
+
+    .footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 100%;
+      }
+
+      .card img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="family.html">Family</a>
+    <a href="edu.html" class="active">Education</a>
+    <a href="friends.html">Friends</a>
+    <a href="foodplace.html">Fav Food and Place</a>
+    <a href="galeri.html">Gallery</a>
+  </div>
+
+  <div class="content">
+    <div class="caption-animate">This is My Education Journey</div>
+
+    <h2>My School History</h2>
+    <dl>
+      <dt>2008 - 2010</dt>
+      <dd>Tadika Harapanku, Koklanas Kelantan</dd>
+      <dt>2011 - 2016</dt>
+      <dd>SK Pangkal Kalong, Ketereh Kelantan</dd>
+      <dt>2017 - 2021</dt>
+      <dd>SMK Pangkal Kalong, Ketereh Kelantan</dd>
+      <dt>2022 - Now</dt>
+      <dd>UiTM Machang Branch, Kelantan</dd>
+    </dl>
+
+    <h2>Experience and Achievements</h2>
+    <ol>
+      <li>Represented the school in district-level volleyball during secondary school</li>
+      <li>Library prefect during primary school</li>
+      <li>School prefect during secondary school</li>
+      <li>Achieved 3As, 3Bs, and 3Cs in PT3</li>
+      <li>Worked at McDonald's while waiting for UPU results before entering Diploma UiTM</li>
+      <li>Represented the school in a camping program during secondary school</li>
+    </ol>
+
+    <h2><i>Pictures from School and University Life</i></h2>
+    <div class="row">
+      <div class="card">
+        <img src="images/myself2.jpg" alt="Me at UiTM" title="Me at UiTM">
+      </div>
+      <div class="card">
+        <img src="images/spm2.jpg" alt="SPM Life" title="SPM Life">
+      </div>
+      <div class="card">
+        <img src="images/uitm.jpg" alt="University Life" title="University Life">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Muhammad Fareez Ilham. This website is developed for IMD318 Individual Assignment</p>
+  </div>
+
+</body>
+</html>

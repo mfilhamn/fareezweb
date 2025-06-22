@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Biodata</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #1976d2;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #bbdefb;
+      color: #0d47a1;
+    }
+
+    .topnav a.active {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    .scrolling-banner {
+      background-color: #bbdefb;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .scrolling-banner h2 {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: bold;
+      animation: scroll-left 12s linear infinite;
+      color: #0d47a1;
+      font-family: 'Times New Roman', serif;
+    }
+
+    @keyframes scroll-left {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    .bio-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .bio-img {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .bio-img img {
+      width: 230px;
+      border-radius: 15px;
+    }
+
+    .bio-table {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    table {
+      width: 100%;
+      background-color: #ffffff;
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0, 0, 128, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    table th, table td {
+      padding: 10px 15px;
+      text-align: left;
+      border-bottom: 1px solid #bbdefb;
+    }
+
+    table th {
+      background-color: #1976d2;
+      color: white;
+      width: 120px;
+      text-align: right;
+    }
+
+    .bio-text {
+      font-size: 16px;
+      text-align: justify;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 128, 0.1);
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 128, 0.1);
+    }
+
+    h1, h2, h3 {
+      color: #0d47a1;
+      text-align: center;
+    }
+
+    ol, ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0d47a1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 50px;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .bio-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="biodata.html" class="active">Biodata</a>
+    <a href="family.html">Family</a>
+    <a href="edu.html">Education</a>
+    <a href="friends.html">Friends</a>
+    <a href="foodplace.html">Fav Food and Place</a>
+    <a href="galeri.html">Gallery</a>
+  </div>
+
+  <div class="scrolling-banner">
+    <h2>💻 Welcome to My IMD318 Project Website – Created with Passion & Purpose! 📚</h2>
+  </div>
+
+  <div class="bio-container">
+    <div class="bio-img">
+      <img src="images/myself3.jpg" alt="Myself">
+    </div>
+    <div class="bio-table">
+      <table>
+        <tr><th>Name</th><td>Muhammad Fareez Ilham Bin Mohd Rozi</td></tr>
+        <tr><th>Age</th><td>21 Years old</td></tr>
+        <tr><th>Gender</th><td>Boy</td></tr>
+        <tr><th>Birth</th><td>14 June 2004</td></tr>
+        <tr><th>Nationality</th><td>Malaysia</td></tr>
+        <tr><th>State</th><td>Kelantan</td></tr>
+        <tr><th>City</th><td>Kota Bharu</td></tr>
+        <tr><th>Hobby</th><td>Hiking</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="bio-text">
+    <h1><i>This is my Biodata</i></h1>
+    <p>
+      I was born on 14 June 2004 at Hospital Kota Bharu, Kelantan. I am originally from Kok Lanas, Kelantan, where I was raised with my loving family, my parents, three brothers, and a younger sister.
+    </p>
+    <p>
+      I began my education at Sekolah Kebangsaan Pangkal Kalong, followed by my secondary studies at Sekolah Menengah Kebangsaan Pangkal Kalong. After completing my SPM, I worked for around three months at McDonald's USJ1, Subang Jaya, Selangor, while waiting for my UPU results. This experience helped build my communication skills and confidence in handling people from different backgrounds.
+    </p>
+    <p>
+      I am now in my final year of a Diploma in Information Management at UiTM Machang. This course, coded IMD318, focuses on practical web development skills and digital content creation. It teaches students how to design, build, and publish websites using HTML and CSS.
+    </p>
+    <p>
+      Through this subject, I have gained valuable skills in designing responsive layouts, organizing content structure, and adding engaging elements like animations, image galleries, and navigation menus. IMD318 has truly allowed me to express creativity while learning a vital digital skill for the future.
+    </p>
+    <p>
+      I consider myself a passionate, hardworking, and curious learner who is always open to new experiences. Outside of academics, I enjoy exploring nature through hiking, capturing moments through photography, and spending quality time with my friends and family. My dreams include becoming a skilled information professional, traveling the world, and one day contributing to a tech-driven society.
+    </p>
+    <p>
+      This website is a reflection of my journey from a small town boy to a university student with big goals. Every page holds a story, and every line of code represents the knowledge and dedication I’ve poured into this project.
+    </p>
+  </div>
+
+  <section>
+    <h3>Top 5 K-Dramas I Love</h3>
+    <ol>
+      <li>Lovely Runner</li>
+      <li>Vincenzo</li>
+      <li>Squid Game</li>
+      <li>True Beauty</li>
+      <li>Descendants of the Sun</li>
+    </ol>
+
+    <h3>Top 5 Favorite Cafes and Restaurants in Kelantan</h3>
+    <ul>
+      <li>The Layers</li>
+      <li>Le French Bistro</li>
+      <li>Hamara Dining</li>
+      <li>KB Burger and Steak</li>
+      <li>Boris Cafe</li>
+    </ul>
+
+    <h3><u>My Favorite Cartoon on YouTube</u></h3>
+    <p>
+      I always enjoy watching this cartoon on YouTube:<br>
+      <a href="https://youtu.be/t4QOuTDo3Q8?si=xLguz0AM6bHwhwGh" target="_blank">
+        Doraemon YouTube Channel
+      </a>
+    </p>
+
+       <h3><u>Some of My Favorite Songs</u></h3>
+<h3><u>Some of My Favorite Songs on YouTube</u></h3>
+<ul>
+  <li>
+
+<figure style="text-align: left; margin-left: 20px;">
+  <figcaption><strong>Sudden Shower - Lovely Runner OST</strong></figcaption>
+  <audio controls>
+    <source src="audio/lovelyrunner.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</figure>
+
+    <p style="text-align: center;">
+      <a href="#top"><img src="images/top.png" alt="Back to Top" width="50"></a>
+    </p>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Muhammad Fareez Ilham. This website is developed for IMD318 Individual Assignment</p>
+  </div>
+
+</body>
+</html>

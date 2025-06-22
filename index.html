@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #1976d2;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #64b5f6;
+      color: #003366;
+    }
+
+    .topnav a.active {
+      background-color: #0d47a1;
+      color: white;
+    }
+
+    .icon-bar {
+      position: fixed;
+      top: 75%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .icon-bar a {
+      display: block;
+      padding: 14px;
+      text-align: center;
+      color: white;
+      transition: 0.3s;
+      font-size: 20px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #003366;
+    }
+
+    .instagram {
+      background-color: #3f51b5;
+    }
+
+    .scrolling-text {
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #0d47a1;
+      padding: 12px 0;
+      animation: scroll-left 12s linear infinite;
+      text-align: center;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    #clock {
+      font-size: 30px;
+      margin: 20px auto;
+      text-align: center;
+      background-color: #bbdefb;
+      padding: 10px 20px;
+      border-radius: 20px;
+      width: fit-content;
+      color: #0d47a1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio src="audio/blue.mp3" autoplay loop></audio>
+
+  <div class="icon-bar">
+    <a href="https://www.instagram.com/mfilhamn/" class="instagram"><i class="fa fa-instagram"></i></a>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="family.html">Family</a>
+    <a href="edu.html">Education</a>
+    <a href="friends.html">Friends</a>
+    <a href="foodplace.html">Fav Food and Place</a>
+    <a href="galeri.html">Gallery</a>
+  </div>
+
+  <div class="scrolling-text">Welcome to My IMD318 Website Project - A Journey Through My Personal and Academic Life! 💙📘</div>
+
+  <div class="content">
+    <p>I am <sub>Muhammad Fareez Ilham</sub> bin <sup>Mohd Rozi</sup>, a dedicated and enthusiastic student currently pursuing a Diploma in Information Management at Universiti Teknologi MARA (UiTM) Machang, Kelantan.</p>
+
+    <p>This website was created as part of a personal academic project under the subject <strong>IMD318: Introduction to Web Content Management & Design</strong>. The subject has taught me how to build and style websites using HTML, CSS, and JavaScript. More importantly, it has helped me explore my creativity and apply what I’ve learned in a real-life project that reflects my personality.</p>
+
+    <p>Through this website, I share a little bit about myself my background, my family, my academic journey, and the amazing friendships I've made along the way. You’ll also find a gallery of memorable photos, my favorite food and places, and insights into my personal interests.</p>
+
+    <p>The IMD318 course has been one of the most interesting subjects in my diploma journey. It has opened my eyes to the importance of design, structure, and user experience in building effective and beautiful websites. Every section on this site was carefully planned and created to demonstrate what I’ve learned.</p>
+
+    <p>I hope you enjoy browsing through this site as much as I enjoyed building it. Thank you for visiting!</p>
+  </div>
+
+  <div id="clock"></div>
+
+  <script>
+    setInterval(showTime, 1000);
+    function showTime() {
+      let time = new Date();
+      let hour = time.getHours();
+      let min = time.getMinutes();
+      let sec = time.getSeconds();
+      let am_pm = "AM";
+
+      if (hour >= 12) {
+        am_pm = "PM";
+        if (hour > 12) hour -= 12;
+      }
+
+      if (hour === 0) hour = 12;
+
+      hour = hour < 10 ? "0" + hour : hour;
+      min = min < 10 ? "0" + min : min;
+      sec = sec < 10 ? "0" + sec : sec;
+
+      document.getElementById("clock").innerHTML = `${hour}:${min}:${sec} ${am_pm}`;
+    }
+    showTime();
+  </script>
+
+  <div class="footer">
+    <p>This website is developed for IMD318 Individual Assignment by Muhammad Fareez Ilham</p>
+  </div>
+
+</body>
+</html>
